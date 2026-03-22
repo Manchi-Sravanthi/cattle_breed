@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cattle Breed AI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="center-card">
+    <h1>🐄 Cattle Breed AI</h1>
+
+    <!-- File uploader as button -->
+    <label class="custom-file-label" for="fileInput">📤 Choose File</label>
+    <input type="file" id="fileInput" accept="image/*">
+
+    <!-- Image preview -->
+    <div id="imagePreview"></div>
+
+    <!-- Predict button -->
+    <button id="predictBtn">🔍 Predict Breed</button>
+
+    <!-- Prediction result -->
+    <div id="result"></div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
